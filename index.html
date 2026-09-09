@@ -5,77 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Maintenance Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body class="flex flex-row-reverse">
     <header>
       <nav class="fixed inset-y-0 left-0 w-64 bg-gray-800 p-4 text-left text-white">
       <div class="container mx-auto">
-        <h1 class="text-xl font-bold">Maintenance Dashboard</h1>
-      <ul class="list-none m-4 p-0">
+        <h1 class="text-xl font-bold py-8">Maintaniance Dashboard</h1>
+        <hr class="border-gray-600" />
+      <ul class="list-none p-0 text-base py-6 space-y-6">
           <li>
-            <a href="#Overview" class="">
+            <a href="#Overview" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-chart-simple"></i>
               Overview
             </a>
           </li>
           <li>
-            <a href="#Task" class="">
+            <a href="#Task" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-list-check"></i>
               Task
             </a>
           </li>
           <li>
-            <a href="#Calendar" class="">
+            <a href="#Calendar" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+                  <i class="fa-solid fa-calendar"></i>
               Calendar
             </a>
           </li>
           <li>
-            <a href="#Finances" class="">
+            <a href="#Finances" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-dollar-sign"></i>
               Finances
             </a>
           </li>
           <li>
-            <a href="#Health" class="">
+            <a href="#Health" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-heart"></i>
               Health 
             </a>
           </li>
           <li>
-            <a href="#Home" class="">
+            <a href="#Home" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-home"></i>
               Home
             </a>
           </li>
           <li>
-            <a href="#Car" class="">
+            <a href="#Car" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-car"></i>
               Car
             </a>
           </li>
           <li>
-            <a href="#Shopping" class="">
+            <a href="#Shopping" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-shopping-cart"></i>
               Shopping
             </a>
           </li>
                 <li>
-            <a href="#Documents" class="">
+            <a href="#Documents" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-file-lines"></i>
               Documents
             </a>
           </li>
           <li>
-            <a href="#Notes" class="">
+            <a href="#Notes" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+              <i class="fa-solid fa-sticky-note"></i>
               Notes
             </a>
           </li>
-
       </ul>
+      <hr class="border-gray-600" />
     </div>
-    <div class="m-4 p-0">
-      <div class="Quote">"No pressure, no diamonds." — Thomas Carlyle</div>
-    </div>  
-    <div>
-      <a href ="#" class="">
-        <span>Gmail</span>
+      <div class="absolute bottom-24 left-1 text-base">
+        <div class="bg-slate-700/60 text-white p-4 rounded-lg max-w-xs">
+          "No pressure, no diamonds." — Thomas Carlyle
+        </div>
+      </div>
+
+    <div class="absolute bottom-4 left-4 right-4 text-base">
+      <hr class="border-gray-600 mb-4" />
+      <a href ="#" class="text-base">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Fastcoder615@gmail.com</span>
       </a>
     </div>
       </nav>
     </header>
-    <main class="flex relative right-0 flex-col bg-sky-950 h-screen w-[80%] justify-center items-center">
+    <main class="flex relative right-0 flex-col bg-sky-950 h-screen w-[calc(100%-16rem)] justify-center items-center">
       <div class="container flex flex-col h-[96%] w-[98%] ">
         <div class="flex w-[100%] ">Good morn</div>
         <div class="grid grid-col-10 grid-row-12 gap-4 w-[100%] h-[90%]">
