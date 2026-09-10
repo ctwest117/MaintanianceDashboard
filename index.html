@@ -9,94 +9,100 @@
   </head>
   <body class="flex flex-row-reverse">
     <header>
-      <nav class="fixed inset-y-0 left-0 w-64 bg-gray-800 p-4 text-left text-white">
+      <nav class="fixed inset-y-0 left-0 w-16 overflow-y-auto bg-gray-800 p-2 text-left text-white sm:w-64 sm:p-4">
       <div class="container mx-auto">
-        <h1 class="text-xl font-bold py-8">Maintaniance Dashboard</h1>
+        <h1 class="truncate py-4 text-center text-sm font-bold max-[600px]:py-2 sm:py-8 sm:text-left sm:text-xl">Maintaniance Dashboard</h1>
         <hr class="border-gray-600" />
-      <ul class="list-none p-0 text-base py-6 space-y-6">
+      <ul class="list-none space-y-3 p-0 py-4 text-center text-base max-[600px]:space-y-1 max-[600px]:py-2 sm:space-y-6 sm:py-6 sm:text-left">
           <li>
-            <a href="#Overview" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Overview" title="Overview" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-chart-simple"></i>
-              Overview
+              <span class="hidden sm:inline">Overview</span>
             </a>
           </li>
           <li>
-            <a href="#Task" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Task" title="Task" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-list-check"></i>
-              Task
+              <span class="hidden sm:inline">Task</span>
             </a>
           </li>
           <li>
-            <a href="#Calendar" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Calendar" title="Calendar" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
                   <i class="fa-solid fa-calendar"></i>
-              Calendar
+              <span class="hidden sm:inline">Calendar</span>
             </a>
           </li>
           <li>
-            <a href="#Finances" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Finances" title="Finances" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-dollar-sign"></i>
-              Finances
+              <span class="hidden sm:inline">Finances</span>
             </a>
           </li>
           <li>
-            <a href="#Health" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Health" title="Health" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-heart"></i>
-              Health 
+              <span class="hidden sm:inline">Health</span>
             </a>
           </li>
           <li>
-            <a href="#Home" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Home" title="Home" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-home"></i>
-              Home
+              <span class="hidden sm:inline">Home</span>
             </a>
           </li>
           <li>
-            <a href="#Car" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Car" title="Car" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-car"></i>
-              Car
+              <span class="hidden sm:inline">Car</span>
             </a>
           </li>
           <li>
-            <a href="#Shopping" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Shopping" title="Shopping" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-shopping-cart"></i>
-              Shopping
+              <span class="hidden sm:inline">Shopping</span>
             </a>
           </li>
                 <li>
-            <a href="#Documents" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Documents" title="Documents" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-file-lines"></i>
-              Documents
+              <span class="hidden sm:inline">Documents</span>
             </a>
           </li>
           <li>
-            <a href="#Notes" class="block px-3 py-1 rounded-lg hover:bg-neutral-700/60 transition-colors">
+            <a href="#Notes" title="Notes" class="block rounded-lg px-1 py-1 hover:bg-neutral-700/60 transition-colors sm:px-3">
               <i class="fa-solid fa-sticky-note"></i>
-              Notes
+              <span class="hidden sm:inline">Notes</span>
             </a>
           </li>
       </ul>
       <hr class="border-gray-600" />
     </div>
-      <div class="absolute bottom-24 left-1 text-base">
+      <div class="absolute bottom-24 left-1 hidden text-base min-[601px]:block">
         <div class="bg-slate-700/60 text-white p-4 rounded-lg max-w-xs">
           "No pressure, no diamonds." — Thomas Carlyle
         </div>
       </div>
 
-    <div class="absolute bottom-4 left-4 right-4 text-base">
+    <div class="absolute bottom-4 left-2 right-2 text-center text-xs max-[600px]:bottom-2 sm:left-4 sm:right-4 sm:text-left sm:text-base">
       <hr class="border-gray-600 mb-4" />
       <a href ="#" class="text-base">
         <i class="fa-solid fa-envelope"></i>
-        <span>Fastcoder615@gmail.com</span>
+        <span class="hidden sm:inline">Fastcoder615@gmail.com</span>
       </a>
     </div>
       </nav>
     </header>
-    <main class="flex relative right-0 flex-col bg-sky-950 h-screen w-[calc(100%-16rem)] justify-center items-center">
+    <main class="relative right-0 flex h-screen w-[calc(100%-4rem)] flex-col items-center justify-center bg-sky-950 sm:w-[calc(100%-16rem)]">
       <div class="container flex flex-col h-[96%] w-[98%] ">
         <div class="flex w-[100%] ">Good morn</div>
         <div class="grid grid-col-10 grid-row-12 gap-4 w-[100%] h-[90%]">
-            <div class="col-span-10 rounded-lg bg-slate-700">1</div>
+            <div class="col-span-10 rounded-lg bg-slate-700 flex justify-between ">
+              <div class="flex justify-center items-center bg-slate-800 min-w-[24%] h-[100%] rounded-lg"><section class="w-[95%] h-[90%] flex-col"><p class="text-red-500">URGENT</p><h1>1</h1><p>Task due today</p></section></div> 
+              <div class="flex justify-center items-center bg-slate-800 min-w-[24%] h-[100%] rounded-lg"><section class="w-[95%] h-[90%] flex-col"><p class="text-yellow-500">UPCOMING</p><h1>3</h1><p>Task due this week</p></section></div> 
+              <div class="flex justify-center items-center bg-slate-800 min-w-[24%] h-[100%] rounded-lg"><section class="w-[95%] h-[90%] flex-col"><p class="text-green-500">COMPLETED</p><h1>12</h1><p>Task completed</p></section></div> 
+              <div class="flex justify-center items-center bg-slate-800 min-w-[24%] h-[100%] rounded-lg"><section class="w-[95%] h-[90%] flex-col"><p class="text-blue-500">ALL TASKS</p><h1>16</h1><p>Total task</p></section></div> 
+            </div>
+            
             <div class="col-span-4 row-span-5 row-start-2 rounded-lg bg-slate-700">2</div>
             <div class="col-span-4 row-span-5 col-start-5 row-start-2 rounded-lg bg-slate-700">3</div>
             <div class="col-span-2 row-span-4 col-start-9 row-start-2 rounded-lg bg-slate-700">4</div>
